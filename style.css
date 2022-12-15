@@ -18,39 +18,40 @@
 
 h1 {
   color: #222;
-  font-size: 62px;
+  font-size: 52px;
   line-height: 64px;
 }
 
 h2 {
   color: #222;
-  font-size: 56px;
+  font-size: 48px;
   line-height: 55px;
 }
 
 h4 {
   color: #222;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 h6 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 p {
   color: #465b52;
-  font-size: 20px;
+  font-size: 18px;
   margin: 15px 0 20px 0;
 }
 
 .section-p1 {
-  padding: 60px 80px;
+  padding: 40px 80px;
 }
 
 .section-m1 {
   margin: 40px 0px;
 }
+
 .logo {
   width: 110px;
   height: 70px;
@@ -75,6 +76,10 @@ p {
   align-items: center;
 }
 
+.mobile {
+  display: none;
+}
+
 #navlist li {
   list-style: none;
   margin: 5px 20px;
@@ -82,10 +87,10 @@ p {
 
 #navlist li a {
   text-decoration: none;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   color: #1a1a1a;
-  transition: 0.3s ease;
+  transition: 0.1s ease;
   position: relative;
 }
 
@@ -98,6 +103,7 @@ p {
   text-decoration-thickness: 2px; */
 }
 
+/* for underline */
 #navlist li a.active::after,
 #navlist li a:hover::after {
   content: "";
@@ -113,10 +119,13 @@ p {
   content: none;
 }
 
+#navlist #close {
+  display: none;
+}
 #hero {
   background-image: url("img/hero4.png");
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   background-position: top 0% right 0%;
   background-size: cover;
   padding: 0 80px;
@@ -141,7 +150,7 @@ p {
   border: 0px;
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
   cursor: pointer;
   background-position-x: center;
@@ -156,6 +165,7 @@ p {
 #feature {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -254,23 +264,23 @@ p {
 
 #product1 .pro .des span {
   color: #606063;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #product1 .pro .des h5 {
   padding-top: 7px;
   color: #1a1a1a;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #product1 .pro .des i {
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(243, 181, 25);
 }
 
 #product1 .pro .des h4 {
   padding-top: 7px;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
   color: #088178;
 }
@@ -305,12 +315,12 @@ p {
 
 #banner h4 {
   color: white;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #banner h2 {
   color: white;
-  font-size: 42px;
+  font-size: 32px;
   padding: 10px 0px;
 }
 
@@ -319,7 +329,7 @@ p {
 }
 
 button.normal {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   padding: 15px 30px;
   color: #1a1a1a;
@@ -352,7 +362,7 @@ button.normal {
   background-image: url("img/banner/b17.jpg");
   background-size: cover;
   background-position: center;
-  width: 660px;
+  width: 48%;
   min-width: 580px;
   height: 50vh;
   padding-left: 35px;
@@ -364,25 +374,25 @@ button.normal {
 
 #sm-banner h4 {
   color: white;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 300;
 }
 
 #sm-banner h2 {
   color: white;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 800;
 }
 
 #sm-banner span {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   padding-bottom: 15px;
 }
 
 button.white {
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 600;
   padding: 11px 18px;
   color: white;
@@ -432,13 +442,13 @@ button.white {
 
 #banner3 h2 {
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 900;
 }
 
 #banner3 h3 {
   color: #ec544e;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 800;
 }
 
@@ -456,13 +466,13 @@ button.white {
 
 #newsletter h4 {
   color: white;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 #newsletter p {
   color: #818ea0;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -478,9 +488,9 @@ button.white {
 }
 
 #newsletter input {
-  height: 49px;
+  height: 44px;
   padding: 0 1.25em;
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
   border: solid 1px transparent;
   border-radius: 4px;
@@ -516,17 +526,17 @@ footer .logo {
 }
 
 footer h4 {
-  font-size: 20px;
+  font-size: 16px;
   padding-bottom: 20px;
 }
 
 footer p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 0 8px 0;
 }
 
 footer a {
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   color: #222;
   margin-bottom: 10px;
@@ -559,4 +569,9 @@ footer a:hover {
 footer .copyright {
   width: 100%;
   text-align: center;
+  margin-top: 30px;
+}
+
+.section-p1.bottom {
+  padding-bottom: 30px;
 }
